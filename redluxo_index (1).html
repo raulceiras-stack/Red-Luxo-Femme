@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Luxo Femme – Atacado Moda Feminina</title>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1907753296713087');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1907753296713087&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --red:        #9E0F26;
+      --red-deep:   #5A0A17;
+      --gold:       #D7AE5B;
+      --gold-light: #EBCB8B;
+      --cream:      #FBF3EF;
+      --text-mid:   #7A4A50;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Página inteira em uma tela só */
+    .page {
+      width: 100%;
+      max-width: 480px;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      flex: 1;
+      min-height: 250px;
+      overflow: hidden;
+      background: linear-gradient(160deg, #5A0A17, #9E0F26);
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 56px 22px 16px;
+      text-align: center;
+      background: linear-gradient(to top,
+        rgba(90,10,23,0.97) 0%,
+        rgba(90,10,23,0.78) 50%,
+        transparent 100%);
+    }
+
+    .hero-eyebrow {
+      font-size: 10px;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(25px, 7vw, 32px);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.12;
+      margin-bottom: 8px;
+    }
+
+    .hero-title em { font-style: italic; color: var(--gold-light); }
+
+    .hero-copy {
+      font-size: 13.5px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      color: rgba(255,255,255,0.92);
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    .chips {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      color: var(--red-deep);
+      background: var(--gold-light);
+      padding: 5px 11px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+
+    .chip-outline {
+      background: transparent;
+      color: var(--gold-light);
+      border: 1px solid rgba(235,203,139,0.6);
+    }
+
+    /* ── CTA ── */
+    .content {
+      padding: 16px 20px 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .section-label {
+      font-size: 10.5px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2px;
+    }
+
+    .btn-wpp {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Jost', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #fff;
+      background: #25D366;
+      box-shadow: 0 3px 16px rgba(37,211,102,0.35);
+      animation: pulse-green 2.4s ease-in-out infinite;
+      transition: transform 0.15s ease;
+    }
+
+    .btn-wpp:nth-of-type(2) { animation-delay: .3s; }
+    .btn-wpp:nth-of-type(3) { animation-delay: .6s; }
+    .btn-wpp:nth-of-type(4) { animation-delay: .9s; }
+
+    .btn-wpp:active { transform: scale(0.97); }
+    .btn-wpp svg { width: 24px; height: 24px; flex-shrink: 0; }
+
+    .btn-text { flex: 1; text-align: center; padding-right: 24px; }
+
+    .btn-vip {
+      background: linear-gradient(135deg, #B01230 0%, #7A0A1C 100%);
+      color: var(--gold-light);
+      border: 1.5px solid var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 3px 16px rgba(158,15,38,0.4);
+      animation: pulse-vip 2.4s ease-in-out infinite;
+      animation-delay: 0.9s;
+    }
+
+    @keyframes pulse-vip {
+      0%, 100% { transform: scale(1);    box-shadow: 0 3px 16px rgba(158,15,38,0.4); }
+      50%      { transform: scale(1.02); box-shadow: 0 5px 24px rgba(215,174,91,0.55); }
+    }
+
+    @keyframes pulse-green {
+      0%, 100% { transform: scale(1);    box-shadow: 0 3px 16px rgba(37,211,102,0.35); }
+      50%      { transform: scale(1.02); box-shadow: 0 5px 22px rgba(37,211,102,0.55); }
+    }
+
+    /* ── RODAPÉ ── */
+    .footer {
+      padding: 10px 20px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .footer-logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .footer-tagline {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--text-mid);
+    }
+
+    .footer-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--red);
+      letter-spacing: 0.5px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero    { animation: fadeUp 0.6s ease 0.05s both; }
+    .content { animation: fadeUp 0.6s ease 0.2s both; }
+    .footer  { animation: fadeUp 0.6s ease 0.35s both; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <img class="hero-img" src="./modelo_redluxo.jpg" alt="Vestido Red Luxo Femme" onerror="this.style.display='none'">
+    <div class="hero-overlay">
+      <p class="hero-eyebrow">Red Luxo Femme · Atacado</p>
+      <h1 class="hero-title">Vestidos no atacado <em>para revender</em></h1>
+      <p class="hero-copy">Saia na frente da concorrência com modelos que vendem bem e qualidade que faz suas clientes voltarem</p>
+    </div>
+  </div>
+
+  <!-- CTA: um botão por loja -->
+  <div class="content">
+    <span class="section-label">Escolha sua loja e peça o catálogo</span>
+
+    <a href="https://wa.me/558589888021?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20quero%20fazer%20um%20pedido!" class="btn-wpp" onclick="fbq('track', 'Contact')" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="btn-text">Loja 1 · Central dos Fabricantes</span>
+    </a>
+
+    <a href="https://wa.me/558596686761?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20quero%20fazer%20um%20pedido!" class="btn-wpp" onclick="fbq('track', 'Contact')" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="btn-text">Loja 2 · Galpão do Povão</span>
+    </a>
+
+    <a href="https://wa.me/558598542917?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20quero%20fazer%20um%20pedido!" class="btn-wpp" onclick="fbq('track', 'Contact')" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="btn-text">Loja 3 - Fábrica</span>
+    </a>
+
+    <a href="https://chat.whatsapp.com/IyaC4DOCINu3YGo6Chqym8" class="btn-wpp btn-vip" onclick="fbq('track', 'Contact')" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#EBCB8B"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="btn-text">Grupo VIP</span>
+    </a>
+  </div>
+
+  <!-- RODAPÉ -->
+  <div class="footer">
+    <img class="footer-logo" src="./logo_redluxo.jpg" alt="Red Luxo Femme">
+    <div class="footer-text">
+      <span class="footer-tagline">Seja uma lojista de sucesso</span>
+      <span class="footer-name">Red Luxo Femme</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

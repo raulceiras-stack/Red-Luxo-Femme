@@ -46,7 +46,6 @@
       justify-content: center;
     }
 
-    /* Página inteira em uma tela só */
     .page {
       width: 100%;
       max-width: 480px;
@@ -115,30 +114,6 @@
       margin: 0 auto;
     }
 
-    .chips {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .chip {
-      font-size: 10.5px;
-      font-weight: 500;
-      letter-spacing: 0.4px;
-      color: var(--red-deep);
-      background: var(--gold-light);
-      padding: 5px 11px;
-      border-radius: 50px;
-      white-space: nowrap;
-    }
-
-    .chip-outline {
-      background: transparent;
-      color: var(--gold-light);
-      border: 1px solid rgba(235,203,139,0.6);
-    }
-
     /* ── CTA ── */
     .content {
       padding: 16px 20px 6px;
@@ -177,13 +152,10 @@
       transition: transform 0.15s ease;
     }
 
-
     .btn-wpp:active { transform: scale(0.97); }
     .btn-wpp svg { width: 24px; height: 24px; flex-shrink: 0; }
 
     .btn-text { flex: 1; text-align: center; padding-right: 24px; }
-
-
 
     @keyframes pulse-green {
       0%, 100% { transform: scale(1);    box-shadow: 0 3px 16px rgba(37,211,102,0.35); }
@@ -264,7 +236,7 @@
 
   <!-- RODAPÉ -->
   <div class="footer">
-    <img class="footer-logo" src="./logo_redluxo.jpg" alt="Red Luxo Femme">
+    <img class="footer-logo" src="./logo_redluxo.jpg" alt="Red Luxo Femme" onerror="this.style.display='none'">
     <div class="footer-text">
       <span class="footer-tagline">Seja uma lojista de sucesso</span>
       <span class="footer-name">Red Luxo Femme</span>
